@@ -10,7 +10,7 @@ namespace NLayer.Core.Repositories
         IQueryable<T> GetAll(Expression<Func<T, bool>> expression);
 
         IQueryable<T> where(Expression<Func<T, bool>> expression);
-        IQueryable<bool> AnyAsync(Expression<Func<T, bool>> expression);
+
         Task AddAsync(T entitiy);
         Task AddRangeAsync(IEnumerable<T> entities);
         void Update(T entitiy);
